@@ -1,0 +1,120 @@
+.header {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.9em;
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.logo-contacts {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 1.19;
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.logo-text {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+  &__item {
+    margin-right: 50px;
+    position: relative;
+  }
+  &__item:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav-list__link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.link-studia::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  bottom: -19px;
+  left: 0px;
+}
+
+.contact-info {
+  display: flex;
+  margin-left: auto;
+  &__link {
+    margin-right: 50px;
+  }
+  &__link:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact-info .contact + .contact {
+  margin-left: 50px;
+}
+
+.contact-info__contact {
+  color: var(--title-text-color);
+  font-weight: 500;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus,
+  &:hover .contact-info__icon,
+  &:focus .contact-info__icon {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.contact-white {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+
+.contact-info__icon {
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
